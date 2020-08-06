@@ -26,15 +26,15 @@
                 </div>
                 <div class="left-column">
                     <img id="profile_pic" src="./img/Dennis.jpg" alt="me">
-                    <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
-
+                    <!-- <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5> -->
+<!-- 
                     <div id="theme-options-wrapper">
                         <div class="theme-dot" id="light-mode"></div>
                         <div class="theme-dot" id="blue-mode"></div>
                         <div class="theme-dot" id="green-mode"></div>
                         <div class="theme-dot" id="purple-mode"></div>
                     </div>
-                    <p id="settings-note">Theme settings will be saved for <br>your next visit</p>
+                    <p id="settings-note">Theme settings will be saved for <br>your next visit</p> -->
                 </div>
                 <div class="right-column">
                     <div id="preview-shadow">
@@ -80,10 +80,10 @@
                </div>
                <div class="social-links">
                    <h4>Social Links</h4>
-                   <a href=""><i class="fab fa-github"></i> Github</a>
-                   <a href=""><i class="fab fa-linkedin"></i> Linkedin</a>
-                   <a href=""><i class="fab fa-twitter"></i> Twitter</a>
-                   <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+                   <a target="_blank" href="https://github.com/ChugilC"><i class="fab fa-github"></i> Github</a>
+                   <a target="_blank" href="https://www.linkedin.com/in/chugil-c-345318175/"><i class="fab fa-linkedin"></i> Linkedin</a>
+                   <a target="_blank" href="https://twitter.com/Chugil_C"><i class="fab fa-twitter"></i> Twitter</a>
+                   <a target="_blank" href="https://www.instagram.com/chugilc/"><i class="fab fa-instagram"></i> Instagram</a>
                </div>
            </div>
         </div>
@@ -91,13 +91,52 @@
 
     <section class="s1">
         <div class="main-container">
-            Projects
+            <h3 style="text-align: center;">Some of my Projects</h3>
+            <div class="post-wrapper">
+                <div class="post">
+                    <img class="thumbnail" src="./img/moviebokking.png">
+                    <div class="post-preview">
+                        <h6 class="post-title">Movie Seat Booking</h6>
+                        <p class="post-intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <a target="_blank" href="https://gallant-bardeen-a44b11.netlify.app/">Live Demo</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img class="thumbnail" src="./img/assistant.png">
+                    <div class="post-preview">
+                        <h6 class="post-title">Speech Assistant</h6>
+                        <p class="post-intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <a target="_blank" href="https://ecstatic-ride-56c7c2.netlify.app/">Live Demo</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img class="thumbnail" src="./img/todo.jpg">
+                    <div class="post-preview">
+                        <h6 class="post-title">To-Do App</h6>
+                        <p class="post-intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <a target="_blank" href="https://silly-snyder-124477.netlify.app/">Live Demo</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Project In Mind. Let's Work Together</h3>
+
+            <form id="contact-form">
+                <label>Name</label>
+                <input type="text" name="name" class="input-feild" placeholder="Enter your Name">
+
+                <label>Email</label>
+                <input type="email" name="email" class="input-feild" placeholder="Enter your Email">
+
+                <label>Message</label>
+                <textarea class="input-feild" name="message" placeholder="Message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
 
