@@ -50,9 +50,11 @@ p,li,span,label,input,textarea {
 }
 
 .s1 {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
 }
 
 .s2 {
@@ -66,13 +68,38 @@ p,li,span,label,input,textarea {
     margin: 0 auto;
 }
 
+.heading:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 .greeting-wrapper {
     display: grid;
     text-align: center;
     align-content: center;
-   
     min-height: 10em;
 }
+
+.heading {
+    display: block;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+}
+
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-400px); 
+    }
+    80% {
+      transform: translateX(20px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0); 
+    } 
+}
+  
+
 .intro-wrapper {
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
@@ -134,8 +161,13 @@ p,li,span,label,input,textarea {
     grid-area: left-column;
     padding-top: 50px;
     padding-bottom: 50px;
-    
+    transition: all 2s;
 }
+
+/* .left-column:hover {
+    transform: scale(1.01);
+} */
+
 #profile_pic {
     display: block;
     margin: 0 auto;
@@ -144,6 +176,12 @@ p,li,span,label,input,textarea {
     object-fit: cover;
     border: 5px solid var(--borderColor);
     border-radius: 50%;
+    transition: all 2s;
+    
+}
+
+#profile_pic:hover {
+    transform: scale(1.1);
     
 }
 
@@ -329,11 +367,15 @@ p,li,span,label,input,textarea {
     color: #fff;
     background-color: grey;
     border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
+
 .main-footer {
     text-align: center;
     padding-bottom: 0;
     margin: 0;
+    margin-top: 20px;
     background: var(--previewShadow);
 }
 .footer-h {
